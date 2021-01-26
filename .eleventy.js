@@ -8,6 +8,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({'src/wp-content': '/wp-content'})
 
   return {
+    templateFormats: ['html', 'txt'],
     dir: {
       input: 'src/views',
       output: 'dist',

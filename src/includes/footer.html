@@ -1,0 +1,62 @@
+<script type="text/javascript">jQuery(function () {
+  jQuery.fn.scrollToTop = function () {
+    jQuery(this).hide().removeAttr('href')
+    if (jQuery(window).scrollTop() >= '250') jQuery(this).fadeIn('slow')
+    var scrollDiv = jQuery(this)
+    jQuery(window).scroll(function () {
+      if (jQuery(window).scrollTop() <= '250') jQuery(scrollDiv).fadeOut('slow')
+      else jQuery(scrollDiv).fadeIn('slow')
+    })
+    jQuery(this).click(function () {
+      jQuery('html, body').animate({scrollTop: 0}, 'slow')
+    })
+  }
+})
+
+jQuery(function () {
+  jQuery('#Go_Top').scrollToTop()
+})</script>
+<a style='position: fixed; bottom: 25px; right: 15px; cursor:pointer; display:none;' href="#" id='Go_Top'>
+  <img src="/wp-content/themes/biocompact/images/up.png" alt="Наверх" title="Наверх"> </a>
+<div class="container">
+  <div class="page_content">
+    <section class="site-main"><h1 class="entry-title"></h1>
+      <div class="entry-content"></div>
+    </section>
+    <div class="clear"></div>
+  </div>
+</div>
+<div id="footer-wrapper">
+  <div class="container footer">
+    <div class="cols-4 widget-column-1">
+      <div class="footertitle">Биокомпакт</div>
+      <p><a href="/company/">О компании</a><br>
+        <a href="/sertifikaty/">Сертификаты</a><br>
+        <a href="/objekty/">Объекты</a><br>
+        <a href="/stati/">Статьи</a><br>
+        <a href="/kontakty/">Контакты</a></p>
+    </div>
+    <div class="cols-4 widget-column-2">
+      <div class="footertitle">Продукция</div>
+      <p><a href="/stancii-ochistki-vody-biocompact/">Станции очистки «Биокомпакт»</a><br>
+        <a href="/kanalizacionnye-nasosnye-stancii/">Канализационные насосные станции</a><br>
+        <a href="/stancii-ochistki-vody-akvas/">Станции очистки «Аквас»</a><br>
+        <a href="/vodozabornye-usly-vzu/">ВЗУ и водоподготовка</a></p>
+    </div>
+    <div class="cols-4 widget-column-3">
+      <div class="footertitle">Услуги</div>
+      <p><a href="/proektirovanie-ochistnykh-sooruzheniy/">Проектирование</a><br>
+        <a href="/izgotovlenie/">Изготовление</a><br>
+        <a href="/stroitelstvo-montazh-ochistnyh-sooruzhenij/">Строительство, монтаж и наладка</a><br>
+        <a href="/rekonstrukcija/">Реконструкция</a><br>
+        <a href="/ekspluatacija-servis/">Эксплуатация и сервис</a></p>
+    </div>
+    <div class="cols-4 widget-column-4">
+      <div class="footertitle">Контакты</div>
+      <p>Московская обл, г. Мытищи, ул. Силикатная, 36</p>
+      <div class="phone-no">Тел.: <a href="tel:+74994446834">+7 (499) 444-68-34</a><br/> Email: <a
+          href="mailto:info@biocompact.ru">info@biocompact.ru</a></div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</div>

@@ -1,0 +1,13 @@
+.header-contacts {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 55px;
+    margin-top: 25px;
+    color: #1d1d1d;
+}
+
+.header-contacts-column {
+    display: flex;
+    margin-left: 25px;
+}
